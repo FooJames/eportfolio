@@ -1,7 +1,11 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Astrofy | Personal Portfolio Website Template';
-export const SITE_DESCRIPTION = 'Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.';
+export const SITE_NAME = 'James Foo';
+export const SITE_TITLE = 'James Foo | Career E-Portfolio';
+export const SITE_DESCRIPTION = 'Career e-portfolio of James Foo, a Computer Science student at De La Salle University Manila seeking a data science or machine learning internship.';
+export const GITHUB_URL = 'https://github.com/FooJames';
+// TODO: replace with your real LinkedIn profile URL.
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/REPLACE-ME';
 export const GENERATE_SLUG_FROM_TITLE = true
 export const TRANSITION_API = true
