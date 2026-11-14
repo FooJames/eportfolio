@@ -3,16 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout title="Resume | James Foo" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Career direction</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="mb-10">
+    Computer Science undergraduate seeking a data science or machine learning internship, with interests in statistical
+    learning and Human-Computer Interaction.
   </div>
 
   <div class="mb-5">
@@ -21,72 +19,62 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Bachelor of Science in Computer Science, major in Software Technology"
+      subtitle="De La Salle University, Manila · Expected graduation 2028"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">Project experience</div>
   </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="StabiliRead · Undergraduate thesis (in progress)"
+      subtitle="Gaze-based reading assistance for Android"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="list-disc mx-5 grid gap-1">
+        <li>Developed an Android reading prototype that uses gaze estimation to activate four forms of visual assistance.</li>
+        <li>Implemented timestamped logging to align gaze samples, reading patterns, and visual-aid interactions within user sessions.</li>
+        <li>Built a Python and Jupyter workflow to validate recordings, visualize gaze patterns, and export structured research datasets.</li>
+        <li>Examined raw and smoothed gaze trajectories, missing data, and event timing to assess recording quality.</li>
+      </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Kabuhayan DB · Backend tester"
+      subtitle="Team project for a local government unit"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="list-disc mx-5 grid gap-1">
+        <li>Performed backend testing for a team-developed database system intended to digitize SKMLHOAI's administrative processes.</li>
+        <li>Project scope included member and household records, dues tracking, certification generation, and accreditation autofill.</li>
+      </ul>
     </TimeLineElement>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Technical skills</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+  <dl class="grid gap-3 mb-10">
+    <div><dt class="font-semibold">Programming</dt><dd>Python, R, C, JavaScript</dd></div>
+    <div><dt class="font-semibold">Data analysis</dt><dd>Exploratory data analysis, data validation, data visualization</dd></div>
+    <div><dt class="font-semibold">Tools and libraries</dt><dd>pandas, NumPy, Matplotlib, Jupyter Notebook</dd></div>
+    <div><dt class="font-semibold">Development</dt><dd>Android, Git, Firebase, backend testing</dd></div>
+  </dl>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Research interests</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-1">
+    <li>Human-Computer Interaction</li>
+    <li>Behavioral Data Analysis</li>
+    <li>Applied Machine Learning</li>
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Languages</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
+  <div>English, Filipino</div>
 </BaseLayout>
